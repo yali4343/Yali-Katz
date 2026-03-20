@@ -1,0 +1,68 @@
+@keyframes wave {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+  }
+  50% {
+    box-shadow:
+      0 4px 30px rgba(255, 215, 0, 0.6),
+      0 0 40px rgba(255, 215, 0, 0.3);
+  }
+}
+
+.learn-more-btn,
+.btn.learn-more-btn {
+  animation:
+    wave 3s ease-in-out infinite,
+    glow 3s ease-in-out infinite;
+  color: #1a1a2e !important;
+  text-decoration: none;
+  padding: 0.9rem 1.75rem;
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4a 100%) !important;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  font-weight: 700;
+  text-shadow: none;
+}
+
+/* Disable the ::before overlay from main.css for this button */
+.learn-more-btn::before,
+.btn.learn-more-btn::before {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+.learn-more-btn:hover,
+.btn.learn-more-btn:hover {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%) !important;
+  border-color: #10b981 !important;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.6) !important;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Ensure text is always visible */
+.learn-more-btn i,
+.learn-more-btn span,
+.btn.learn-more-btn i,
+.btn.learn-more-btn span {
+  position: relative;
+  z-index: 2;
+}

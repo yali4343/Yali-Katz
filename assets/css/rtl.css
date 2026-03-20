@@ -1,0 +1,132 @@
+/*
+ * RTL (Right-to-Left) styles for Hebrew content
+ * Editorial Dark Theme - Yali Katz's Portfolio
+ */
+
+[dir="rtl"] {
+  font-family: var(--font-main), "Rubik", sans-serif;
+  text-align: right;
+}
+
+[dir="rtl"] .header-container,
+[dir="rtl"] .footer-content {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-main {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .profile-section {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .profile-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .social-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+  padding-right: var(--spacing-xl);
+  padding-left: 0;
+}
+
+[dir="rtl"] .contact-fab {
+  left: var(--spacing-xl);
+  right: auto;
+}
+
+[dir="rtl"] .menu-toggle {
+  left: var(--spacing-md);
+  right: auto;
+}
+
+/* RTL card adjustments */
+[dir="rtl"] .card::before,
+[dir="rtl"] .experience-card::before,
+[dir="rtl"] .project-card::before,
+[dir="rtl"] .education-item::before,
+[dir="rtl"] .feature-item::before,
+[dir="rtl"] .legacy-project::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .experience-list li,
+[dir="rtl"] .feature-item {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+[dir="rtl"] .experience-list li:before {
+  left: auto;
+  right: 0;
+}
+
+/* RTL Mobile Adjustments */
+@media (max-width: 768px) {
+  [dir="rtl"] .header-container {
+    flex-direction: column;
+  }
+
+  [dir="rtl"] .nav-main {
+    flex-direction: column;
+  }
+
+  [dir="rtl"] .profile-section {
+    flex-direction: column;
+  }
+
+  [dir="rtl"] .profile-content {
+    text-align: center;
+  }
+
+  [dir="rtl"] .contact-fab {
+    left: var(--spacing-md);
+  }
+}
+
+/* RTL-specific footer styles */
+[dir="rtl"] .footer-content {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-links .social-links {
+  flex-direction: row-reverse;
+}
+
+/* Make social links visible in RTL mode */
+[dir="rtl"] .footer-links .social-links-footer li a {
+  color: var(--text-muted);
+}
+
+[dir="rtl"] .footer-links .social-links-footer li a:hover {
+  color: var(--accent-primary);
+}
+
+/* Adjust spacing for RTL */
+[dir="rtl"] .footer-info {
+  text-align: right;
+}
+
+[dir="rtl"] .site-metrics {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* RTL icon adjustments */
+[dir="rtl"] .card-title i,
+[dir="rtl"] .section-title i,
+[dir="rtl"] .feature-title i {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .skill-tag i {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}

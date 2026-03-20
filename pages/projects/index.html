@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Yali Katz's Personal Projects in software development."
+    />
+    <title>Personal Projects | Yali Katz</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/responsive.css" />
+    <link rel="stylesheet" href="./projects-styles.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-34DFKV9RWM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-34DFKV9RWM");
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <h1 class="site-title">Personal Projects</h1>
+
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span class="visually-hidden">Toggle menu</span>
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav-main collapsed" id="main-nav">
+          <a
+            href="javascript:void(0)"
+            onclick="location.href = '../../index.html'"
+            >Home</a
+          >
+          <a
+            href="javascript:void(0)"
+            onclick="location.href = '../../pages/work-experience/index.html'"
+            >Experience</a
+          >
+          <a
+            href="javascript:void(0)"
+            onclick="location.href = '../../pages/projects/index.html'"
+            >Personal Projects</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Navigation Button -->
+      <section class="section">
+        <div class="container">
+          <a
+            href="javascript:void(0)"
+            onclick="location.href = '../../index.html'"
+            class="btn mb-lg"
+          >
+            <i class="fas fa-arrow-left"></i> Back to Home
+          </a>
+        </div>
+      </section>
+
+      <!-- Main Content -->
+      <section class="section">
+        <div class="container">
+          <h2
+            style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem"
+          >
+            <i class="fas fa-rocket"></i> Featured Projects
+          </h2>
+
+          <!-- Galactic Defenders Web Game -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">
+                <i class="fas fa-rocket"></i> Galactic Defenders Web Game
+              </h3>
+              <p class="project-subtitle">
+                A browser-based space shooter where players defend the galaxy
+                from enemy missiles while managing time, lives, and score.
+              </p>
+            </div>
+
+            <div class="features-grid">
+              <div class="feature-item">
+                <h4>
+                  <i class="fas fa-user-shield"></i> Full Login and Progress
+                </h4>
+                <p>
+                  Includes user registration, login, and score history so each
+                  player can track performance across sessions.
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4><i class="fas fa-gamepad"></i> Customizable Gameplay</h4>
+                <p>
+                  Players can choose the shoot key, set the match duration, and
+                  switch between multiple space backgrounds.
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4>
+                  <i class="fas fa-space-shuttle"></i> Classic Arcade Action
+                </h4>
+                <p>
+                  Features responsive spaceship controls, progressive enemy
+                  difficulty, a three-life system, sound effects, and a timer
+                  that pushes players to finish before time runs out.
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4><i class="fas fa-code"></i> Web-Based Implementation</h4>
+                <p>
+                  Built as an HTML5, CSS, and JavaScript game with local storage
+                  for account data and score tracking.
+                </p>
+              </div>
+            </div>
+
+            <div class="tech-stack">
+              <span class="tech-badge">HTML5 Canvas</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">Local Storage</span>
+              <span class="tech-badge">Game Logic</span>
+              <span class="tech-badge">Audio</span>
+              <span class="tech-badge">Responsive UI</span>
+            </div>
+
+            <div class="project-actions">
+              <a
+                href="https://github.com/yali4343/Galactic-Defenders-Web-Game"
+                class="project-btn"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <ul class="social-links-footer">
+              <li>
+                <a href="mailto:yali4343@gmail.com" aria-label="Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://https://www.linkedin.com/in/yali-katz/"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/yali4343"
+                  target="_blank"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Contact Floating Action Button -->
+    <div class="contact-fab">
+      <a href="mailto:yali4343@gmail.com" title="Contact Me">
+        <img src="../../assets/images/chat.png" alt="Contact Me" />
+      </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../../assets/js/main.js"></script>
+    <script>
+      // Update the current year
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
